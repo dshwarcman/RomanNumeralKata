@@ -41,14 +41,13 @@ namespace RomanNumeralsKataTests
         public void return14to20Tests()
         {
             RomanNumerals roman = new RomanNumerals();
-            Assert.AreEqual("XIV", roman.NumToRoman(9));
-            Assert.AreEqual("XV", roman.NumToRoman(10));
-            Assert.AreEqual("XVI", roman.NumToRoman(11));
-            Assert.AreEqual("XVII", roman.NumToRoman(12));
-            Assert.AreEqual("XVIII", roman.NumToRoman(13));
-            Assert.AreEqual("XVIII", roman.NumToRoman(13));
-            Assert.AreEqual("XIX", roman.NumToRoman(13));
-            Assert.AreEqual("XX", roman.NumToRoman(13));
+            Assert.AreEqual("XIV", roman.NumToRoman(14));
+            Assert.AreEqual("XV", roman.NumToRoman(15));
+            Assert.AreEqual("XVI", roman.NumToRoman(16));
+            Assert.AreEqual("XVII", roman.NumToRoman(17));
+            Assert.AreEqual("XVIII", roman.NumToRoman(17));
+            Assert.AreEqual("XIX", roman.NumToRoman(19));
+            Assert.AreEqual("XX", roman.NumToRoman(20));
         }
     }
 }
