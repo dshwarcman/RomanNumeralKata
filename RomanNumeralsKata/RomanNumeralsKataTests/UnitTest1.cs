@@ -8,7 +8,7 @@ namespace RomanNumeralsKataTests
     public class UnitTest1
     {        
         [TestMethod]
-        public void return1to3Tests()
+        public void return0to3Tests()
         {
             RomanNumerals roman = new RomanNumerals();
             Assert.AreEqual("", roman.NumToRoman(0));
@@ -74,5 +74,18 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("XXXIX", roman.NumToRoman(39));
             Assert.AreEqual("XL", roman.NumToRoman(40));
         }
+         [TestMethod]
+        public void return41to1000Tests()
+        {
+            RomanNumerals roman = new RomanNumerals();
+            Assert.AreEqual("LXI", roman.NumToRoman(41));
+            Assert.AreEqual("XLIX", roman.NumToRoman(49));
+            Assert.AreEqual("LVII", roman.NumToRoman(57));
+            Assert.AreEqual("LXIV", roman.NumToRoman(64));
+            Assert.AreEqual("LXXIV", roman.NumToRoman(74));
+            Assert.AreEqual("XC", roman.NumToRoman(90));
+            Assert.AreEqual("XCIX", roman.NumToRoman(99));
+            Assert.AreEqual("D", roman.NumToRoman(500));
+            Assert.AreEqual("M", roman.NumToRoman(1000));
     }
 }

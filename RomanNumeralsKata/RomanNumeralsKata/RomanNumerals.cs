@@ -8,26 +8,20 @@ namespace RomanNumeralsKata
 {
     public class RomanNumerals
     {
+        static int[] specials = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+        static string[] romanSpecials = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
         public string NumToRoman(int num)
         {
-            if (num == 0)
-                return "";
-            if (num == 40)
-                return "XL";
-            if (num == 9)
-                return "IX";
-            else if (num > 8)
-                return "X" + NumToRoman(num - 10);
-            else if (num > 4)
-                return "V" + NumToRoman(num - 5);
-            else if (num == 4)
-                return "IV";
-            else if (num == 1)
-                return "I";
-            else if (num == 2)
-                return "II";
-            else
-                return "III";
+            string value = "";
+            for (int i = 0; i < specials.Length && num != 0; i++)
+            {
+                while (num >= specials[i])
+                {
+                    num -= specials[i];
+                    value += romanSpecials[i];
+                }
+            }
+            return value;
         }
     }
 }
