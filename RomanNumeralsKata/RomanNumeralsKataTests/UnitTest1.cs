@@ -25,7 +25,7 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("V", roman.NumToRoman(5));
             Assert.AreEqual("VI", roman.NumToRoman(6));
             Assert.AreEqual("VII", roman.NumToRoman(7));
-            Assert.AreEqual("X", roman.NumToRoman(8));
+            Assert.AreEqual("VIII", roman.NumToRoman(8));
         }
         [TestMethod]
         public void return9to13Tests()
