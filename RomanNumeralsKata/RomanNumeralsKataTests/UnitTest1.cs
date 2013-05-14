@@ -71,7 +71,7 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("XXXVI", roman.NumToRoman(36));
             Assert.AreEqual("XXXVII", roman.NumToRoman(37));
             Assert.AreEqual("XXXVIII", roman.NumToRoman(38));
-            Assert.AreEqual("XXXIX", roman.NumToRoman(38));
+            Assert.AreEqual("XXXIX", roman.NumToRoman(39));
             Assert.AreEqual("XL", roman.NumToRoman(40));
         }
     }
