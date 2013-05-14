@@ -87,7 +87,7 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("XCIX", roman.NumToRoman(99));
             Assert.AreEqual("D", roman.NumToRoman(500));
             Assert.AreEqual("M", roman.NumToRoman(1000));
-            Assert.AreEqual("MMMCXI", roman.NumToRoman(3065));
+            Assert.AreEqual("MMMLXV", roman.NumToRoman(3065));
         }
     }
 }
