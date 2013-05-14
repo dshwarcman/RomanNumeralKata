@@ -35,7 +35,7 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("X", roman.NumToRoman(10));
             Assert.AreEqual("XI", roman.NumToRoman(11));
             Assert.AreEqual("XII", roman.NumToRoman(12));
-            Assert.AreEqual("XIII", roman.NumToRoman(14));
+            Assert.AreEqual("XIII", roman.NumToRoman(13));
         }
     }
 }
