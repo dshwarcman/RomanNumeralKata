@@ -78,7 +78,7 @@ namespace RomanNumeralsKataTests
         public void return41to1000Tests()
         {
             RomanNumerals roman = new RomanNumerals();
-            Assert.AreEqual("LXI", roman.NumToRoman(41));
+            Assert.AreEqual("XLI", roman.NumToRoman(41));
             Assert.AreEqual("XLIX", roman.NumToRoman(49));
             Assert.AreEqual("LVII", roman.NumToRoman(57));
             Assert.AreEqual("LXIV", roman.NumToRoman(64));
@@ -86,7 +86,7 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("XC", roman.NumToRoman(90));
             Assert.AreEqual("XCIX", roman.NumToRoman(99));
             Assert.AreEqual("D", roman.NumToRoman(500));
-            Assert.AreEqual("M", roman.NumToRoman(1001));
+            Assert.AreEqual("M", roman.NumToRoman(1000));
         }
     }
 }
