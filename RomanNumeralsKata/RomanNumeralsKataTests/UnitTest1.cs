@@ -37,5 +37,18 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("XII", roman.NumToRoman(12));
             Assert.AreEqual("XIII", roman.NumToRoman(13));
         }
+        [TestMethod]
+        public void return14to20Tests()
+        {
+            RomanNumerals roman = new RomanNumerals();
+            Assert.AreEqual("XIV", roman.NumToRoman(9));
+            Assert.AreEqual("XV", roman.NumToRoman(10));
+            Assert.AreEqual("XVI", roman.NumToRoman(11));
+            Assert.AreEqual("XVII", roman.NumToRoman(12));
+            Assert.AreEqual("XVIII", roman.NumToRoman(13));
+            Assert.AreEqual("XVIII", roman.NumToRoman(13));
+            Assert.AreEqual("XIX", roman.NumToRoman(13));
+            Assert.AreEqual("XX", roman.NumToRoman(13));
+        }
     }
 }
