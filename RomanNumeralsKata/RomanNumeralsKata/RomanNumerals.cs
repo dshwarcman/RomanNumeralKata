@@ -8,14 +8,16 @@ namespace RomanNumeralsKata
 {
     public class RomanNumerals
     {
-        public string oneToEight(int num)
+        public string NumToRoman(int num)
         {
             if (num == 0)
                 return "";
-            else if (num >= 8)
-                return "X";
+            if (num == 9)
+                return "IX";
+            else if (num > 8)
+                return "X" + NumToRoman(num - 9);
             else if (num > 4)
-                return "V" + oneToEight(num - 5);
+                return "V" + NumToRoman(num - 5);
             else if (num == 4)
                 return "IV";
             else if (num == 1)
