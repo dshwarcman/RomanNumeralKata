@@ -11,20 +11,31 @@ namespace RomanNumeralsKataTests
         public void return1to3Tests()
         {
             RomanNumerals roman = new RomanNumerals();
-            Assert.AreEqual("I", roman.oneToEight(1));
-            Assert.AreEqual("II", roman.oneToEight(2));
-            Assert.AreEqual("III", roman.oneToEight(3));
+            Assert.AreEqual("", roman.NumToRoman(0));
+            Assert.AreEqual("I", roman.NumToRoman(1));
+            Assert.AreEqual("II", roman.NumToRoman(2));
+            Assert.AreEqual("III", roman.NumToRoman(3));
         }
 
         [TestMethod]
         public void return4to8Tests()
         {
             RomanNumerals roman = new RomanNumerals();
-            Assert.AreEqual("IV", roman.oneToEight(4));
-            Assert.AreEqual("V", roman.oneToEight(5));
-            Assert.AreEqual("VI", roman.oneToEight(6));
-            Assert.AreEqual("VII", roman.oneToEight(7));
-            Assert.AreEqual("X", roman.oneToEight(8));
+            Assert.AreEqual("IV", roman.NumToRoman(4));
+            Assert.AreEqual("V", roman.NumToRoman(5));
+            Assert.AreEqual("VI", roman.NumToRoman(6));
+            Assert.AreEqual("VII", roman.NumToRoman(7));
+            Assert.AreEqual("X", roman.NumToRoman(8));
+        }
+        [TestMethod]
+        public void return9to13Tests()
+        {
+            RomanNumerals roman = new RomanNumerals();
+            Assert.AreEqual("IX", roman.NumToRoman(9));
+            Assert.AreEqual("X", roman.NumToRoman(10));
+            Assert.AreEqual("XI", roman.NumToRoman(11));
+            Assert.AreEqual("XII", roman.NumToRoman(12));
+            Assert.AreEqual("XIII", roman.NumToRoman(14));
         }
     }
 }
