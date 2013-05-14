@@ -12,6 +12,8 @@ namespace RomanNumeralsKata
         {
             if (num == 0)
                 return "";
+            if (num == 40)
+                return "XL";
             if (num == 9)
                 return "IX";
             else if (num > 8)

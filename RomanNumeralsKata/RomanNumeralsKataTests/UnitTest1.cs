@@ -49,5 +49,30 @@ namespace RomanNumeralsKataTests
             Assert.AreEqual("XIX", roman.NumToRoman(19));
             Assert.AreEqual("XX", roman.NumToRoman(20));
         }
+        [TestMethod]
+        public void return21to40Tests()
+        {
+            RomanNumerals roman = new RomanNumerals();
+            Assert.AreEqual("XXI", roman.NumToRoman(21));
+            Assert.AreEqual("XXII", roman.NumToRoman(22));
+            Assert.AreEqual("XXIII", roman.NumToRoman(23));
+            Assert.AreEqual("XXIV", roman.NumToRoman(24));
+            Assert.AreEqual("XXV", roman.NumToRoman(25));
+            Assert.AreEqual("XXVI", roman.NumToRoman(26));
+            Assert.AreEqual("XXVII", roman.NumToRoman(27));
+            Assert.AreEqual("XXVIII", roman.NumToRoman(28));
+            Assert.AreEqual("XXIX", roman.NumToRoman(29));
+            Assert.AreEqual("XXX", roman.NumToRoman(30));
+            Assert.AreEqual("XXXI", roman.NumToRoman(31));
+            Assert.AreEqual("XXXII", roman.NumToRoman(32));
+            Assert.AreEqual("XXXIII", roman.NumToRoman(33));
+            Assert.AreEqual("XXXIV", roman.NumToRoman(34));
+            Assert.AreEqual("XXXV", roman.NumToRoman(35));
+            Assert.AreEqual("XXXVI", roman.NumToRoman(36));
+            Assert.AreEqual("XXXVII", roman.NumToRoman(37));
+            Assert.AreEqual("XXXVIII", roman.NumToRoman(38));
+            Assert.AreEqual("XXXIX", roman.NumToRoman(39));
+            Assert.AreEqual("XL", roman.NumToRoman(40));
+        }
     }
 }
